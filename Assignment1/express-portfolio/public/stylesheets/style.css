@@ -1,8 +1,217 @@
+/* public/stylesheets/style.css */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #5d54a4, #7d72ce);
+  color: #fff;
+  margin: 0;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+ul.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.skills-list li {
+  margin: 10px 0;
+}
+
+form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Backgrounds for specific pages */
+
+/* Home page */
+.home-page {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+/* About Me page */
+.about-page {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+
+/* Projects page */
+.projects-page {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+/* Contact page */
+.contact-page {
+  background: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+
+/* General body styling for all pages */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Stylish text for all headings */
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif; /* Add a modern, stylish font */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply hover effects to navigation links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* Stylish hover effects for buttons */
+.btn:hover {
+  background-color: #ffdd57;
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply stylish hover effects to profile images */
+.profile-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for skills list */
+ul.skills-list li {
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Form input hover effects */
+form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+form .form-control:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Home-specific container styling */
+.home-page .container {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Stylish text shadow and effects for all sections */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
